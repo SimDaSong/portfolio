@@ -20,11 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff744978-f2a9-4719-96ce-fd4af34516ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/fonts/neodgm.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +65,7 @@
       <updated>1592061729577</updated>
       <workItem from="1592061730676" duration="1106000" />
       <workItem from="1592062848809" duration="4087000" />
+      <workItem from="1593433042329" duration="524000" />
     </task>
     <servers />
   </component>
@@ -84,6 +82,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="721" y="187" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592066361794">
