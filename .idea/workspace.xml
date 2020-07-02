@@ -21,6 +21,14 @@
   <component name="ChangeListManager">
     <list default="true" id="ff744978-f2a9-4719-96ce-fd4af34516ce" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/precache-manifest.81fa04e0430a23899bca6d2711e5b30e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/service-worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.62cccbd6.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.62cccbd6.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/runtime-main.014f792b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/runtime-main.014f792b.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
@@ -111,12 +119,12 @@
     </state>
     <state x="1104" y="325" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1440.-1097.1440.2537/1792.-186.2560.1417/0.23.1792.1097@0.23.1792.1097" timestamp="1593651473781" />
     <state x="1104" y="325" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1593634778926" />
-    <state x="897" y="465" width="617" height="538" key="find.popup" timestamp="1593695798637">
+    <state x="897" y="465" width="617" height="538" key="find.popup" timestamp="1593697736803">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="196" y="343" width="617" height="538" key="find.popup/-1440.-1097.1440.2537/1792.-186.2560.1417/0.23.1792.1097@0.23.1792.1097" timestamp="1593678490543" />
     <state x="2072" y="227" width="882" height="695" key="find.popup/-1440.-1097.1440.2537/1792.-186.2560.1417/0.23.1792.1097@1792.-186.2560.1417" timestamp="1593694392910" />
-    <state x="897" y="465" width="617" height="538" key="find.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1593695798637" />
+    <state x="897" y="465" width="617" height="538" key="find.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1593697736803" />
     <state x="3378" y="105" width="958" height="874" key="search.everywhere.popup" timestamp="1593694584572">
       <screen x="1792" y="-186" width="2560" height="1417" />
     </state>
