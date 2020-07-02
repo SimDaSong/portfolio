@@ -1,0 +1,13 @@
+.Main-wrap .Main-text {
+    font-family: DOSMyungjo;
+    font-size: 80px;
+    margin-bottom: 80px;
+    color: white;
+}
+
+@font-face {
+    font-family: 'DOSMyungjo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/DOSMyungjo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

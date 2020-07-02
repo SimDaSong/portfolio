@@ -1,0 +1,17 @@
+.team {
+    margin-top: 45px;
+}
+
+.team-wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team .card {
+    text-align: center;
+}
+
+.team .card p {
+    font-size: 20px;
+}
