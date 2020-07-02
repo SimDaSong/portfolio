@@ -20,8 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff744978-f2a9-4719-96ce-fd4af34516ce" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/portfolio/src/Images/html-5.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/portfolio/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/src/setupTests.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +51,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/portfolio/src" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -49,8 +61,15 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/portfolio/src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/frontend/src/Assets/fonts" />
+      <recent name="$PROJECT_DIR$/portfolio/public" />
+      <recent name="$PROJECT_DIR$/portfolio/src/Images" />
+      <recent name="$PROJECT_DIR$/portfolio/src" />
+      <recent name="$PROJECT_DIR$/portfolio/src/Career" />
+      <recent name="$PROJECT_DIR$/portfolio/src/Contact" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -65,7 +84,10 @@
       <updated>1592061729577</updated>
       <workItem from="1592061730676" duration="1106000" />
       <workItem from="1592062848809" duration="4087000" />
-      <workItem from="1593433042329" duration="524000" />
+      <workItem from="1593433042329" duration="10715000" />
+      <workItem from="1593505634011" duration="285000" />
+      <workItem from="1593629666930" duration="6928000" />
+      <workItem from="1593647155122" duration="30183000" />
     </task>
     <servers />
   </component>
@@ -89,17 +111,26 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="721" y="187" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1592066361794" />
-    <state x="1056" y="334" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592067117807">
+    <state x="1056" y="334" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593648973159">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
+    <state x="1056" y="334" key="#com.intellij.fileTypes.FileTypeChooser/-1440.-1097.1440.2537/1792.-186.2560.1417/0.23.1792.1097@0.23.1792.1097" timestamp="1593648973159" />
     <state x="1056" y="334" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1792.1097@0.23.1792.1097" timestamp="1592067117807" />
-    <state x="897" y="465" width="600" height="538" key="find.popup" timestamp="1592067153966">
+    <state x="1104" y="325" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593651473781">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="897" y="465" width="600" height="538" key="find.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1592067153966" />
-    <state x="1110" y="248" width="670" height="676" key="search.everywhere.popup" timestamp="1592061942664">
-      <screen x="0" y="23" width="1792" height="1097" />
+    <state x="1104" y="325" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1440.-1097.1440.2537/1792.-186.2560.1417/0.23.1792.1097@0.23.1792.1097" timestamp="1593651473781" />
+    <state x="1104" y="325" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1593634778926" />
+    <state x="2072" y="227" width="882" height="695" key="find.popup" timestamp="1593694392910">
+      <screen x="1792" y="-186" width="2560" height="1417" />
     </state>
-    <state x="1110" y="248" width="670" height="676" key="search.everywhere.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1592061942664" />
+    <state x="196" y="343" width="617" height="538" key="find.popup/-1440.-1097.1440.2537/1792.-186.2560.1417/0.23.1792.1097@0.23.1792.1097" timestamp="1593678490543" />
+    <state x="2072" y="227" width="882" height="695" key="find.popup/-1440.-1097.1440.2537/1792.-186.2560.1417/0.23.1792.1097@1792.-186.2560.1417" timestamp="1593694392910" />
+    <state x="897" y="465" width="617" height="538" key="find.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1593635003851" />
+    <state x="3378" y="105" width="958" height="874" key="search.everywhere.popup" timestamp="1593694584572">
+      <screen x="1792" y="-186" width="2560" height="1417" />
+    </state>
+    <state x="3378" y="105" width="958" height="874" key="search.everywhere.popup/-1440.-1097.1440.2537/1792.-186.2560.1417/0.23.1792.1097@1792.-186.2560.1417" timestamp="1593694584572" />
+    <state x="1110" y="248" width="670" height="676" key="search.everywhere.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1593636231098" />
   </component>
 </project>
