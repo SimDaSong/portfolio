@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-import Main from './Main/Main';
 import Career from "./Career/Career";
 import Activities from "./Activities/Activities";
 import Projects from "./Projects/Projects";
@@ -12,7 +11,6 @@ import Navigation from "./Navigation/Navigation";
 ReactDOM.render(
   <React.StrictMode>
     <Navigation />
-    <Main />
     <Career wait={5500} />
     <Activities wait={5500} />
     <Projects wait={5500} />

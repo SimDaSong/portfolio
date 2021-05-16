@@ -7,10 +7,7 @@ class Navigation extends React.Component {
     hideBar = () => {
         const hidden = this.state.hidden;
 
-        (document.getElementById('Main').getBoundingClientRect().bottom <= 0) ?
-            (hidden === 'hidden') && this.setState({ hidden: 'show' })
-            :
-            (hidden === 'show') && this.setState({ hidden: 'hidden' });
+        this.setState({ hidden: 'show' });
     }
 
     pointMenu = () => {
@@ -24,8 +21,6 @@ class Navigation extends React.Component {
             target = 'activities';
         } else if (document.getElementById('Career').getBoundingClientRect().top <= 0) {
             target = 'career';
-        } else if (document.getElementById('Main').getBoundingClientRect().top <= 0) {
-            target = 'main';
         }
 
         this.setState({ target: target });
