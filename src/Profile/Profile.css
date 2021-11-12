@@ -1,0 +1,27 @@
+.Profile-wrap {
+    padding: 25px;
+    height: 300px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.Profile-wrap div {
+    display: inline-block;
+    width: calc(100% / 3);
+    text-align: center;
+}
+
+img {
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 50%;
+    padding: -1px;
+}
