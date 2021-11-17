@@ -6,7 +6,8 @@
     "extends": [
         "airbnb-typescript",
         "plugin:react/recommended",
-        "plugin:@next/next/recommended"
+        "plugin:@next/next/recommended",
+        "plugin:prettier/recommended"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -20,7 +21,8 @@
     "plugins": [
         "react",
         "@typescript-eslint",
-        "import"
+        "import",
+        "prettier"
     ],
     "rules": {
         "import/extensions": ["error", "never", { "css": "always" }]
