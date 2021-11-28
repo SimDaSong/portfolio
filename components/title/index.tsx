@@ -5,7 +5,8 @@ type Props = {
 };
 
 const classes = {
-  title: "text-3xl font-bold tracking-tight text-gray-900 sm:text-3xl",
+  title:
+    "text-3xl font-bold text-default tracking-tight sm:text-3xl tracking-wide",
 };
 
 const Title = (props: Props) => {
