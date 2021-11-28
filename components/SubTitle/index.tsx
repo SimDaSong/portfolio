@@ -5,7 +5,7 @@ type Props = {
 };
 
 const classes = {
-  subTitle: "text-2xl font-bold text-gray-900",
+  subTitle: "text-2xl font-bold text-default tracking-wide",
 };
 
 const SubTitle = (props: Props) => {

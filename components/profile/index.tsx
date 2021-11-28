@@ -1,7 +1,7 @@
 import React from "react";
 
 import Contact from "@/components/contact";
-import SubTitle from "@/components/sub-title";
+import SubTitle from "@/components/SubTitle";
 import { introductions } from "@/utils/data";
 
 const classes = {

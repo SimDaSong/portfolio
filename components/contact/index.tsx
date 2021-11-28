@@ -1,7 +1,7 @@
 import React from "react";
 
 import globalClasses from "@/styles/global-classes";
-import SubTitle from "@/components/sub-title";
+import SubTitle from "@/components/SubTitle";
 import { contacts } from "@/utils/data";
 
 type Props = {
