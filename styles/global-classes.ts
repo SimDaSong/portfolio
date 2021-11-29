@@ -7,7 +7,8 @@ const globalClasses = {
     tableWrap: "",
     text: "break-words text-lg font-bold text-gray-900 sm:mt-0 lg:text-m",
     subText: "text-sm font-large text-gray-500",
-    link: "underline"
+    cardGroupWrap: "grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8",
+    cardWrap: "group relative",
 }
 
 export default globalClasses;
