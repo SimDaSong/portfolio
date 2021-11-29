@@ -3,6 +3,7 @@ import React from "react";
 import globalClasses from "@/styles/global-classes";
 import SubTitle from "@/components/SubTitle";
 import { contacts } from "./data";
+import Link from "@/components/Link";
 
 type Props = {
   className: string;
@@ -22,9 +23,7 @@ const Contact = (props: Props) => {
         {contacts.map((contact, idx) => (
           <p key={idx} className="break-all">
             <span className={classes.contactName}>{contact.name}</span>
-            <span className={`${globalClasses.link}`}>
-              <a href={contact.link}>{contact.text || contact.link}</a>
-            </span>
+            <Link href={contact.link}>{contact.text || contact.link}</Link>
           </p>
         ))}
       </div>
