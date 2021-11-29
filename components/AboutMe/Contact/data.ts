@@ -2,7 +2,7 @@ type Contact = {
   name: string;
   link: string;
   text?: string;
-}
+};
 
 export const contacts: Contact[] = [
   {

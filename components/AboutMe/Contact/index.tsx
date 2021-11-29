@@ -1,6 +1,5 @@
 import React from "react";
 
-import globalClasses from "@/styles/global-classes";
 import SubTitle from "@/components/SubTitle";
 import { contacts } from "./data";
 import Link from "@/components/Link";

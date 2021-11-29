@@ -16,9 +16,9 @@ const Prize = () => {
               <p className={globalClasses.subText}>{prize.department}</p>
             </div>
             <div
-              className="sm:col-span-4"
+              className="sm:col-span-4 mt-4"
               dangerouslySetInnerHTML={{ __html: prize.info }}
-            ></div>
+            />
           </div>
         ))}
       </div>

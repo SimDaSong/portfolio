@@ -25,6 +25,7 @@
         "prettier"
     ],
     "rules": {
-        "import/extensions": ["error", "never", { "css": "always" }]
+        "import/extensions": ["error", "never", { "css": "always" }],
+        "@typescript-eslint/no-shadow": "off"
     }
 }
