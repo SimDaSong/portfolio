@@ -6,10 +6,10 @@ import Title from "@/components/Title";
 
 const classes = {
   profileWrap: "grid items-center gap-y-10 lg:max-w-7xl",
-  introWrap: "mt-4 text-gray-900",
+  introWrap: "mt-4",
 };
 
-export function Profile() {
+const AboutMe = () => {
   return (
     <div>
       <Title>👩🏻‍💻 ABOUT ME</Title>
@@ -28,6 +28,6 @@ export function Profile() {
       </div>
     </div>
   );
-}
+};
 
-export default Profile;
+export default AboutMe;
