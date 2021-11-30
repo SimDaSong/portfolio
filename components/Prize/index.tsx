@@ -11,14 +11,11 @@ const Prize = () => {
         {prizes.map((prize, idx) => (
           <div key={idx} className={globalClasses.tableRow}>
             <div>
-              <p className={globalClasses.subText}>{prize.semester}</p>
+              <p className={globalClasses.subText}>{prize.date}</p>
               <p className={globalClasses.text}>{prize.title}</p>
               <p className={globalClasses.subText}>{prize.department}</p>
             </div>
-            <div
-              className="sm:col-span-4 mt-4"
-              dangerouslySetInnerHTML={{ __html: prize.info }}
-            />
+            <div className="sm:col-span-4 mt-4 md:mt-0">{prize.content}</div>
           </div>
         ))}
       </div>
