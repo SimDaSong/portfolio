@@ -11,14 +11,11 @@ export default function Career() {
         {careers.map((career, idx) => (
           <div key={idx} className={globalClasses.tableRow}>
             <div>
-              <dt className={globalClasses.subText}>{career.date}</dt>
-              <dt className={globalClasses.text}>{career.name}</dt>
-              <dt className={globalClasses.subText}>{career.role}</dt>
+              <p className={globalClasses.subText}>{career.date}</p>
+              <p className={globalClasses.text}>{career.name}</p>
+              <p className={globalClasses.subText}>{career.role}</p>
             </div>
-            <div
-              className="sm:col-span-4 mt-4 md:mt-0"
-              dangerouslySetInnerHTML={{ __html: career.content }}
-            />
+            <div className="sm:col-span-4 mt-4 md:mt-0">{career.content}</div>
           </div>
         ))}
       </div>
