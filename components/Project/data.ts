@@ -72,7 +72,7 @@ export const projects: Project[] = [
         name: "포트폴리오",
         href: "https://github.com/SimDaSong/portfolio",
         imageSrc: "/project/portfolio.png",
-        tags: [NEXT_JS, TYPESCRIPT, TAILWIND_CSS, GITHUB_PAGES],
+        tags: [NEXT_JS, TYPESCRIPT, TAILWIND_CSS, VERCEL],
       },
       {
         date: "2020.01",
