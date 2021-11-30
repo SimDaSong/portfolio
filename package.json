@@ -1,6 +1,11 @@
 {
   "name": "portfolio",
   "private": true,
+  "version": "2.0.0",
+  "homepage": "https://dasong.dev",
+  "repository": "github:SimDaSong/portfolio",
+  "bugs": "https://github.com/SimDaSong/portfolio/issues",
+  "author": "SimDaSong <song98987@korea.ac.kr> (http://dasong.dev/)",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
