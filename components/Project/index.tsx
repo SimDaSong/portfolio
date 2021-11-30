@@ -10,7 +10,7 @@ import Link from "@/components/Link";
 const classes = {
   projectContentWrap: "grid grid-cols-1 gap-y-6 mt-5",
   image:
-    "w-full bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden opacity-90 group-hover:opacity-75 h-60 lg:aspect-none",
+    "w-full aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 h-60 lg:aspect-none",
   cardContentWrap: "mt-4",
 };
 
