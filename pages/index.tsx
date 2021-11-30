@@ -1,5 +1,4 @@
-import type { NextPage } from "next";
-
+import { NextPage } from "next";
 import React from "react";
 import AboutMe from "@/components/AboutMe";
 import Career from "@/components/Career";
