@@ -1,34 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# portfolio
 
-## Getting Started
+포트폴리오를 위한 repository입니다.
 
-First, run the development server:
+https://dasong.dev 혹은 https://sim.dasong.dev 에서 확인하실 수 있습니다.
 
-```bash
-npm run dev
-# or
-yarn dev
+Next.js, Typescript, Tailwind CSS 로 개발하였고 Vercel을 통해 배포합니다.
+
+master, develop 브랜치로 나누어 관리하고 master 브랜치는 release 용, develop 브랜치는 개발용으로 사용합니다.
+
+아직 부족한 점이 많습니다. 개선 사항들은 [Github Projects](https://github.com/SimDaSong/portfolio/projects/1) 를 통해 관리할 예정입니다.
+
+### Installation
+```
+yarn install # 모듈 설치
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+저는 yarn을 사용했으며 npm을 사용하실 분은 `npm install` 명령어로 설치해주세요.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### Build
+```
+next build
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### 실행
+```
+next dev # 개발 모드
+next start # 프로덕션 모드
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
