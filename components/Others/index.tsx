@@ -1,11 +1,11 @@
-import React from "react";
 import globalClasses from "@/styles/global-classes";
 import Title from "@/components/Title";
-import SubTitle from "@/components/SubTitle";
 import { others } from "./data";
 
 const classes = {
   othersContentWrap: "grid grid-cols-1 gap-y-8 mt-5",
+  otherContentWrap: "sm:col-span-4 mt-4 md:mt-0",
+  title: "text-lg font-bold text-default",
 };
 
 const Others = () => {
@@ -15,19 +15,18 @@ const Others = () => {
       <div className={classes.othersContentWrap}>
         {others.map((other, idx) => (
           <div key={idx}>
-            <SubTitle>{other.title}</SubTitle>
+            <p className={classes.title}>{other.title}</p>
             <div>
-              {other.items.map((other, idx) => (
+              {other.items.map((other, idx) => ( // @todo: 네이밍 더 좋은 방법 없는지 생각해보기
                 <div key={idx} className={globalClasses.tableRow}>
                   <div>
                     <p className={globalClasses.subText}>{other.date}</p>
-                    <p className={globalClasses.text}>{other.title}</p>
+                    <p className="font-bold">{other.title}</p>
                     <p className={globalClasses.subText}>{other.role}</p>
                   </div>
-                  <div
-                    className="sm:col-span-4 mt-4"
-                    dangerouslySetInnerHTML={{ __html: other.info }}
-                  />
+                  <div className={classes.otherContentWrap}>
+                    {other.content}
+                  </div>
                 </div>
               ))}
             </div>
