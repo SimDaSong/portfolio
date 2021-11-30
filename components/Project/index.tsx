@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import SubTitle from "@/components/SubTitle";
 import globalClasses from "@/styles/global-classes";
 import { projects } from "./data";
@@ -8,16 +9,15 @@ import Link from "@/components/Link";
 
 const classes = {
   projectContentWrap: "grid grid-cols-1 gap-y-6 mt-5",
-  imageWrap:
-    "w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden opacity-90 group-hover:opacity-75 lg:h-60 lg:aspect-none",
-  image: "w-full h-full object-center object-cover lg:w-full lg:h-full",
+  image:
+    "w-full bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden opacity-90 group-hover:opacity-75 h-60 lg:aspect-none",
   cardContentWrap: "mt-4",
 };
 
 const Project = () => {
   return (
     <div>
-      <Title>🛠 프로젝트</Title>
+      <Title>🛠 PROJECT</Title>
       <div className={classes.projectContentWrap}>
         {projects.map((project, idx) => (
           <div key={idx}>
@@ -30,13 +30,15 @@ const Project = () => {
                   idx // @todo: project 네이밍 더 좋은 방법 없는지 생각해보기
                 ) => (
                   <div key={idx} className={globalClasses.cardWrap}>
-                    <div className={classes.imageWrap}>
-                      <img
-                        src={project.imageSrc}
-                        alt={project.name}
-                        className={classes.image}
-                      />
-                    </div>
+                    <Image
+                      src={project.imageSrc}
+                      alt={project.name}
+                      className={classes.image}
+                      width="100%"
+                      height="100%"
+                      layout="responsive"
+                      objectFit="cover"
+                    />
                     <div className={classes.cardContentWrap}>
                       <p className={globalClasses.subText}>{project.date}</p>
                       <p className={globalClasses.text}>
