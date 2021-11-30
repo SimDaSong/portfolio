@@ -19,7 +19,7 @@ const Others = () => {
             <div>
               {other.items.map(
                 (
-                  other,  // @todo: 네이밍 더 좋은 방법 없는지 생각해보기
+                  other, // @todo: 네이밍 더 좋은 방법 없는지 생각해보기
                   idx
                 ) => (
                   <div key={idx} className={globalClasses.tableRow}>
