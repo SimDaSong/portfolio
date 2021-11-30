@@ -1,7 +1,7 @@
 import React from "react";
 import globalClasses from "@/styles/global-classes";
-import { educations } from "./data";
 import SubTitle from "@/components/SubTitle";
+import { educations } from "./data";
 
 const Education = () => {
   return (
@@ -14,10 +14,7 @@ const Education = () => {
               <p className={globalClasses.subText}>{education.date}</p>
               <p className={globalClasses.text}>{education.name}</p>
             </div>
-            <div
-              className="mt-4 md:mt-0 col-span-4"
-              dangerouslySetInnerHTML={{ __html: education.info }}
-            />
+            <div className="mt-4 md:mt-0 col-span-4">{education.content}</div>
           </div>
         ))}
       </div>
