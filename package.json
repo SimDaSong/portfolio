@@ -8,6 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroicons/react": "^1.0.5",
     "@mdx-js/loader": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "@next/mdx": "^12.0.4",
