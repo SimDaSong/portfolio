@@ -1,0 +1,130 @@
+import Image from 'next/image';
+import SubTitle from "@/components/SubTitle";
+import Attachment from "@/components/Attachment";
+import Block from "@/components/Block";
+
+<Block>
+💡 팀원들의 동의를 받지 못하여, 소스코드 제공을 해드릴 수 없는 점 양해 부탁 드립니다.
+</Block>
+<br/>
+
+<SubTitle>푸야란?</SubTitle>
+
+<br/>
+
+**개발 배경**
+<br/>
+
+2018년, 야시장과 푸드트럭이 각광 받을 때, 이 모든 정보를 한 눈에 볼 수 있게 해주는 사이트가 없었습니다.
+
+이러한 적은 정보량 때문에 사장님은 가게 홍보에 어려움을 겪고, 소비자는 맛집 찾기에 어려움을 겪었습니다.
+
+따라서 이러한 점들을 해소 시켜주기 위해 푸야를 개발하게 되었습니다.
+<br/>
+
+**서비스**
+<br/>
+
+푸드트럭
+<ul className="list-disc list-inside"> 
+    <li>메뉴별 푸드트럭을 한 눈에 볼 수 있습니다.</li>
+    <li>맛 평가를 남길 수 있습니다.</li>
+    <li>음식 후기로 기회 비용을 줄일 수 있습니다.</li>
+    <li>언제, 무슨 푸드트럭이 오는지 파악할 수 있습니다.</li>
+</ul>
+<br/>
+
+야시장
+<ul className="list-disc list-inside">
+    <li>각 야시장의 best 음식을 알 수 있습니다.</li>
+    <li>맛 평가를 남길 수 있습니다.</li>
+    <li>음식 후기로 기회 비용을 줄일 수 있습니다.</li>
+</ul>
+<br/>
+
+사장님
+<ul className="list-disc list-inside">
+    <li>위치 서비스 기반으로 푸드트럭이 고객 근처에 있음을 알려줄 수 있습니다</li>
+    <li>후기 서비스로 손님들의 의견을 들을 수 있습니다</li>
+    <li>스케줄 서비스를 통해 언제, 어디를 가는지 알려줄 수 있습니다.</li>
+</ul>
+<br/>
+
+**기대효과**
+<br/>
+
+사장님은 홍보는 물론이며, 소비자의 생생한 피드백을 받을 수 있습니다.
+
+소비자는 후기 및 별점 시스템으로 더욱 가성비 좋고 맛있는 음식 정보를 편리하게 찾을 수 있습니다.
+<br/>
+
+<SubTitle>프로젝트 제작 과정</SubTitle>
+<br/>
+저희 팀원들은 모두 이전에 웹사이트를 구축해 본 경험이 없고, 코딩 자체를 배우기 시작한지 얼마 되지 않은 팀원들도 있었기 때문에 완성도에 집중하기 보다는 내부 기능이 어떻게 이루어지는지에 대해  알아가는 것을 중심으로 프로젝트를 제작하기로 하였습니다.
+<br/>
+<br/>
+<SubTitle>와이어프레임 제작</SubTitle>
+<br/>
+와이어프레임에 대해 잘 알고 있는 상태는 아니었지만 와이어프레임을 먼저 작성한 후 프로젝트를 진행하고자 하였습니다.
+<br/>
+<br/>
+
+<Attachment files={[{name: '푸드트럭_와이어프레임.pptx', path: '/project/fuya/푸드트럭_와이어프레임.pptx'}]}/>
+<br/>
+
+추가적으로,  페이지 별로 보다 더 나은 URL 작성을 위해 팀원들과 현재 운영되고 있는 페이지들의 URL 구조에 대해 분석해보았습니다.
+<br/>
+
+<Attachment files={[{name: '푸야.txt', path: '/project/fuya/푸야.txt'}]}/>
+<br/>
+
+<p className="font-bold">프로젝트 구성</p>
+<br/>
+
+저희는 Ruby on Rails의 scaffold라는 기능을 프로젝트 작성을 더 쉽게 할 수 있었습니다.
+<br/>
+
+<Block>
+
+**Market scaffold model로 만든 것**
+
+: 가게이름(name) 위치(address) 영업시간(open) 주차가능여부(parking-boolean) 전화번호(tel) 휴일(closed) 시/도(locate1) 군/구(locate2)
+
+=> parking 빼고 전부 string
+<br/>
+
+**MarketReview scaffold**
+
+Market(상위) - MarketReview(하위)
+
+User(상위) - MarketReview(하위)
+
+model로 만든 것 : 제목(title-string) 내용(content-text) 별점(rate-float) 날짜(date-date)
+<br/>
+
+**Shop scaffold**
+
+Market(상위) - Shop(하위)
+
+model로 만든 것 : 가게이름(name) 영업시간(open) 전화번호(tel)
+<br/>
+
+**ShopReview scaffold**
+
+Shop(상위) - ShopReview(하위) User(상위) - ShopReview(하위)
+
+model로 만든 것 : 제목(title-string) 내용(content-text) 별점(rate-float) 날짜(date-date)
+<br/>
+
+**Menu scaffold**
+
+Shop(상위) - Menu(하위)
+
+model로 만든 것 : 메뉴이름(name) 가격(price-integer) 부가설명(content-text)
+</Block>
+<br/>
+
+<SubTitle>느낀 점</SubTitle>
+<br/>
+
+처음 만들어보는 웹 페이지였기 때문에 부족한 점도 많았고 제대로 완성하지 못해서 아쉬웠지만, 팀원들끼리 머리를 맞대고 어떻게 하면 더 좋은 프로젝트를 만들 수 있을까 고민하였던 시간 덕분에 결과물과는 상관 없이 저와 팀원들이 성장할 수 있었던 것 같습니다.

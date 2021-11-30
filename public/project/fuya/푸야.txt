@@ -1,0 +1,70 @@
+위메프
+회원가입 페이지(개인/사업자 버튼으로 나뉨) - /user/join
+개인 회원가입 - /user/join/general
+사업자 회원가입 - /user/join/business
+로그인 페이지 - /user/login
+마이페이지 - /mypage/orders
+회원정보 수정 시 본인 확인 위해 비밀번호 입력 요구하는 페이지 - /user/verify
+회원정보 수정 시 본인 확인 끝나면 - /user/modify/general => 아마 사업자와 일반 회원 양식이 달라서 그런듯
+1대1 문의 - /mypage/qna => 문의하기 버튼 누르면 뒤에 #none이 붙음
+구매후기 페이지 - /mypage/reviews
+찜목록 - /mypage/wishlist
+제안하기 - /customer_center/proposal
+
+밀크코코아
+로그인 - /member/login.php
+회원가입 - /member/join_step1.php => step2도 있음
+카드 - /shop/cart.php
+마이페이지 - /mypage/mypage.php
+
+쿠팡
+로그인 - /login/login.pang
+회원가입 - /login/memberJoinFrm.pang
+장바구니 - cartView.pang
+1:1 채팅 문의하기 - cs-center/chat/main
+판매자/상품문의 - cs-center/pqna/main
+자주묻는질문 - /cs-center/faq/main
+고객의 소리 - /cs-center/voc/main
+아이디찾기 - /login/accountInfoFind.pang
+비밀번호 찾기 - /login/findPassword.pang
++) ?isApp=N
+
+지마켓
+로그인 - login/login
+아이디 찾기 - FindID/FindID
+비밀번호 찾기 - FindPW/FindPW
+회원가입 - Registration/MemberRegistrationBuyer
+고객센터 - CustomerCenter/Main
+
+11번가
+로그인 - login/Login.tmall
+아이디찾기 - register/searchIDForm.tmall
+비밀번호 찾기 - register/searchPWDForm.tmall
+회원가입 - register/memberSubscribeOneIDForm.page
+고객센터 - 11st/faq
+
+5252(oioi)
+로그인 - member/login.html
+아이디찾기 - member/id/find_id.html
+비밀번호 찾기 - member/passwd/find_passwd_info.html
+회원가입 - member/join.html
+Q&A - board/product
+
+요기요
+메인-https://www.yogiyo.co.kr/mobile/#/ 
+로그인-https://www.yogiyo.co.kr/mobile/#/login/
+회원가입-https://www.yogiyo.co.kr/mobile/#/join/
+사장님메인페이지- https://owner.yogiyo.co.kr/owner/login/
+사장님 회원가입-https://owner.yogiyo.co.kr/owner/registration/1/
+
+네이버
+메인https://www.naver.com/
+로그인
+회원가입 첫페이지 https://nid.naver.com/user2/V2Join.nhn?m=begin
+프로필 수정 https://nid.naver.com/user2/help/naverProfile.nhn?m=viewModifyProfile&token_help=dMiSbn93iwij4rB4
+
+고고싱 
+정보수정 - /member/modify.html
+마이페이지-/myshop/index.html
+찜 페이지-/myshop/wish_list.html
+리스트 페이지 /product/list.html?cate_no=46
