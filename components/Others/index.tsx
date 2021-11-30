@@ -17,18 +17,23 @@ const Others = () => {
           <div key={idx}>
             <p className={classes.title}>{other.title}</p>
             <div>
-              {other.items.map((other, idx) => ( // @todo: 네이밍 더 좋은 방법 없는지 생각해보기
-                <div key={idx} className={globalClasses.tableRow}>
-                  <div>
-                    <p className={globalClasses.subText}>{other.date}</p>
-                    <p className="font-bold">{other.title}</p>
-                    <p className={globalClasses.subText}>{other.role}</p>
+              {other.items.map(
+                (
+                  other,  // @todo: 네이밍 더 좋은 방법 없는지 생각해보기
+                  idx
+                ) => (
+                  <div key={idx} className={globalClasses.tableRow}>
+                    <div>
+                      <p className={globalClasses.subText}>{other.date}</p>
+                      <p className="font-bold">{other.title}</p>
+                      <p className={globalClasses.subText}>{other.role}</p>
+                    </div>
+                    <div className={classes.otherContentWrap}>
+                      {other.content}
+                    </div>
                   </div>
-                  <div className={classes.otherContentWrap}>
-                    {other.content}
-                  </div>
-                </div>
-              ))}
+                )
+              )}
             </div>
           </div>
         ))}
