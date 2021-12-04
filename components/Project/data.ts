@@ -2,7 +2,6 @@ import {
   ARDUINO_UNO,
   AWS_EC2,
   CPP,
-  GITHUB_PAGES,
   LOGISIM,
   NEXT_JS,
   PYQT5,

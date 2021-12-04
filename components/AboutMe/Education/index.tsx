@@ -7,7 +7,7 @@ const Education = () => {
   return (
     <div>
       <SubTitle>EDUCATION</SubTitle>
-      <div className={globalClasses.tableWrap}>
+      <div>
         {educations.map((education, idx) => (
           <div key={idx} className={globalClasses.tableRow}>
             <div>

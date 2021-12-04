@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import SubTitle from "@/components/SubTitle";
 import globalClasses from "@/styles/global-classes";
-import { projects } from "./data";
 import Title from "@/components/Title";
+import SubTitle from "@/components/SubTitle";
 import Tag from "@/components/Tag";
 import Link from "@/components/Link";
+import { projects } from "./data";
 
 const classes = {
   projectContentWrap: "grid grid-cols-1 gap-y-6 mt-5",

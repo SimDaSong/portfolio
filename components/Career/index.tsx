@@ -7,7 +7,7 @@ export default function Career() {
   return (
     <div>
       <Title>💻 CAREER</Title>
-      <div className={globalClasses.tableWrap}>
+      <div>
         {careers.map((career, idx) => (
           <div key={idx} className={globalClasses.tableRow}>
             <div>

@@ -7,7 +7,7 @@ const Prize = () => {
   return (
     <div>
       <Title>🏆 PRIZE</Title>
-      <div className={globalClasses.tableWrap}>
+      <div>
         {prizes.map((prize, idx) => (
           <div key={idx} className={globalClasses.tableRow}>
             <div>

@@ -1,8 +1,8 @@
 import React from "react";
 
 import SubTitle from "@/components/SubTitle";
-import { contacts } from "./data";
 import Link from "@/components/Link";
+import { contacts } from "./data";
 
 type Props = {
   className: string;
