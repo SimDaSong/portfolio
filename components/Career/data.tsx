@@ -1,4 +1,5 @@
 import { ReactElement } from "react";
+import Ul from "@/components/Ul";
 
 type Career = {
   date: string;
@@ -41,7 +42,7 @@ export const careers: Career[] = [
           <b>기능 추가</b>
         </p>
         <br />
-        <ul className="list-disc list-inside">
+        <Ul>
           <li>포인트 기능 구현</li>
           <li>Iamport 간편 결제 기능 구현</li>
           <li>쿠폰 기능 구현</li>
@@ -49,13 +50,13 @@ export const careers: Career[] = [
           <li>회원 등급제 도입</li>
           <li>메인 페이지를 관리자가 수정할 수 있게 하는 기능 추가</li>
           <li>그 외 기능 추가 요구사항 구현</li>
-        </ul>
+        </Ul>
         <br />
         <p>
           <b>유지 보수</b>
         </p>
         <br />
-        <ul className="list-disc list-inside">
+        <Ul>
           <li>DB 내 불명확한 column 수정 및 data cleansing</li>
           <li>slow query 개선</li>
           <li>API 응답 속도 개선</li>
@@ -64,7 +65,7 @@ export const careers: Career[] = [
             그 외 오류 수정 및 dotenv, helmet 등의 라이브러리를 사용하여
             프로젝트 설정
           </li>
-        </ul>
+        </Ul>
       </>
     ),
   },
