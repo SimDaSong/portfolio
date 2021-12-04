@@ -2,6 +2,7 @@ import React from "react";
 import Title from "@/components/Title";
 import Contact from "./Contact";
 import Education from "./Education";
+import Skill from "./Skill";
 import { introductions } from "./data";
 
 const classes = {
@@ -25,6 +26,7 @@ const AboutMe = () => {
           <Contact className="lg:col-span-2" />
         </div>
         <Education />
+        <Skill />
       </div>
     </div>
   );
