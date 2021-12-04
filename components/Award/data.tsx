@@ -1,14 +1,14 @@
 import { ReactElement } from "react";
 import Link from "@/components/Link";
 
-type Prize = {
+type Award = {
   date: string;
   title: string;
   department: string;
   content: ReactElement;
 };
 
-export const prizes: Prize[] = [
+export const awards: Award[] = [
   {
     date: "2021-08~2021-11",
     title: "2021 관광데이터 활용 공모전",

@@ -2,7 +2,7 @@ import { NextPage } from "next";
 import React from "react";
 import AboutMe from "@/components/AboutMe";
 import Career from "@/components/Career";
-import Prize from "@/components/Prize";
+import Award from "@/components/Award";
 import Project from "@/components/Project";
 import Others from "@/components/Others";
 
@@ -15,7 +15,7 @@ const Home: NextPage = () => {
     <div className={classes.homeWrap}>
       <AboutMe />
       <Career />
-      <Prize />
+      <Award />
       <Project />
       <Others />
     </div>
