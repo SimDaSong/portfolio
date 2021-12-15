@@ -7,7 +7,7 @@ export const skills: Skill[] = [
     name: "Backend",
     items: [
       "Node.js (Express)",
-      "Javascript (ES6+),Typescript",
+      "Javascript (ES6+), Typescript",
       "MySQL, Sequelize, AWS RDS",
       "AWS EC2, AWS S3",
     ],
