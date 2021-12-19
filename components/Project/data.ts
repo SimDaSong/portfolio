@@ -1,6 +1,5 @@
 import {
   ARDUINO_UNO,
-  AWS_EC2,
   CPP,
   EXPRESS,
   LIGHTSAIL,
@@ -10,7 +9,6 @@ import {
   PYQT5,
   PYTHON_3,
   RASPBERRY_PI,
-  RUBY_ON_RAILS,
   S3,
   STYLED_COMPONENTS,
   TAILWIND_CSS,
