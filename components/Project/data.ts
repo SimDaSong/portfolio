@@ -54,7 +54,7 @@ export const projects: Project[] = [
       {
         date: "2018.03~2018.08",
         name: "헬로 미러",
-        href: "/project/hello-mirror",
+        href: "https://github.com/SimDaSong/hello-mirror",
         imageSrc: "/project/hello-mirror.png",
         tags: [PYTHON_3, PYQT5, RASPBERRY_PI, ARDUINO_UNO],
       },
