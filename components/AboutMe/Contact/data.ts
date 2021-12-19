@@ -22,4 +22,8 @@ export const contacts: Contact[] = [
     name: "Velog",
     link: "https://velog.io/@software",
   },
+  {
+    name: "RocketPunch",
+    link: "https://rocketpunch.com/@simdasong",
+  },
 ];
