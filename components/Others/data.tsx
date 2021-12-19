@@ -102,9 +102,8 @@ export const others: Other[] = [
               진행하였습니다.
             </p>
             <p>
-              학기가 끝난 후 방학 때에는 팀원들과 함께{" "}
-              <Link href="project/fuya">푸야 프로젝트</Link>를 함께
-              제작하였습니다.
+              학기가 끝난 후 방학 때에는 팀원들과 함께 Ruby on Rails를 통해
+              간단한 프로젝트를 함께 만들어보았습니다.
             </p>
           </>
         ),
