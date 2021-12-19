@@ -58,13 +58,6 @@ export const projects: Project[] = [
         imageSrc: "/project/hello-mirror.png",
         tags: [PYTHON_3, PYQT5, RASPBERRY_PI, ARDUINO_UNO],
       },
-      {
-        date: "2018.08",
-        name: "푸야",
-        href: "/project/fuya",
-        imageSrc: "/project/fuya.png",
-        tags: [RUBY_ON_RAILS, AWS_EC2],
-      },
     ],
   },
   {
