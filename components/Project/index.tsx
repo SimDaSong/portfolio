@@ -8,10 +8,10 @@ import { projects } from "@/data/projects";
 const classes = {
   projectContentWrap: "grid grid-cols-1 gap-y-6 mt-5",
   image:
-    "w-full aspect-square rounded-md overflow-hidden group-hover:opacity-75 h-60 lg:aspect-auto",
+    "w-full aspect-square rounded-md overflow-hidden h-60 lg:aspect-auto transition-transform duration-300 group-hover:scale-105",
   cardContentWrap: "mt-4",
   cardGroupWrap: "grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8",
-  cardWrap: "group relative",
+  cardWrap: "group relative rounded-lg overflow-hidden transition-shadow duration-300 hover:shadow-md",
   subText: "text-sm font-large [color:var(--text-muted)]",
   text: "break-words font-bold sm:mt-0",
 };
