@@ -28,16 +28,24 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    name: config.name,
-    url: config.url,
-    description: config.description,
-    sameAs: config.links
-      .filter((l) => l.label !== "Email")
-      .map((l) => l.href),
-  };
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      name: config.title,
+      url: config.url,
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      name: config.name,
+      url: config.url,
+      description: config.description,
+      sameAs: config.links
+        .filter((l) => l.label !== "Email")
+        .map((l) => l.href),
+    },
+  ];
 
   return (
     <html lang="ko">
