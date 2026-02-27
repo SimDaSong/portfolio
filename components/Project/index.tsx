@@ -12,7 +12,7 @@ const classes = {
   cardContentWrap: "mt-4",
   cardGroupWrap: "grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8",
   cardWrap: "group relative",
-  subText: "text-sm font-large text-gray-500",
+  subText: "text-sm font-large [color:var(--text-muted)]",
   text: "break-words font-bold sm:mt-0",
 };
 

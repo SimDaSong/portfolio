@@ -5,8 +5,8 @@ const classes = {
   othersContentWrap: "grid grid-cols-1 gap-y-8 mt-5",
   otherContentWrap: "sm:col-span-4 mt-4 md:mt-0",
   title: "text-lg font-bold text-default",
-  tableRow: "py-5 border-b border-gray-200 md:grid md:grid-cols-5 md:gap-6",
-  subText: "text-sm font-large text-gray-500",
+  tableRow: "py-5 border-b md:grid md:grid-cols-5 md:gap-6 [border-color:var(--border-divider)]",
+  subText: "text-sm font-large [color:var(--text-muted)]",
 };
 
 const Others = () => {

@@ -3,6 +3,7 @@
 
 @theme {
   --color-default: #5477AD;
+  --color-default-light: #6b8fc4;
 
   --spacing-300: 300px;
   --spacing-100: calc(100% - 300px);
@@ -23,12 +24,49 @@
   --font-size-7xl: 5rem;
 }
 
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f9fafb;
+  --bg-nav: rgba(255, 255, 255, 0.8);
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  --text-muted: #6b7280;
+  --border-color: #e5e7eb;
+  --border-divider: #e5e7eb;
+}
+
+:root.dark {
+  --bg-primary: #111827;
+  --bg-secondary: #1f2937;
+  --bg-nav: rgba(17, 24, 39, 0.8);
+  --text-primary: #f3f4f6;
+  --text-secondary: #d1d5db;
+  --text-muted: #9ca3af;
+  --border-color: #374151;
+  --border-divider: #374151;
+}
+
 * {
-    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
-    color: #222222;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
 }
 
 html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 4rem;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
+body {
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  transition: color 0.2s, background-color 0.2s;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+p + p {
+  margin-top: 0.5rem;
+}
+
+li {
+  line-height: 1.75;
 }
