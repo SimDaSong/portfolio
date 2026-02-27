@@ -19,7 +19,7 @@ const Award = () => {
               <p className={classes.text}>{award.title}</p>
               <p className={classes.subText}>{award.department}</p>
             </div>
-            <div className="sm:col-span-4 mt-4 md:mt-0">{award.content}</div>
+            <div className="sm:col-span-4 mt-4 md:mt-0 [color:var(--text-secondary)]">{award.content}</div>
           </div>
         ))}
       </div>

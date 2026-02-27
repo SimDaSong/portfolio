@@ -6,7 +6,7 @@ import { introductions } from "@/data/introductions";
 
 const classes = {
   profileWrap: "grid items-center gap-y-10 lg:max-w-7xl",
-  introWrap: "mt-4",
+  introWrap: "mt-4 [color:var(--text-secondary)]",
 };
 
 const AboutMe = () => {

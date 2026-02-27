@@ -18,7 +18,7 @@ const Education = () => {
               <p className={classes.subText}>{education.date}</p>
               <p className={classes.text}>{education.name}</p>
             </div>
-            <div className="mt-4 md:mt-0 col-span-4">{education.content}</div>
+            <div className="mt-4 md:mt-0 col-span-4 [color:var(--text-secondary)]">{education.content}</div>
           </div>
         ))}
       </div>
