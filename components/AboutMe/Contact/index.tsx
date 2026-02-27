@@ -1,5 +1,3 @@
-import React from "react";
-
 import SubTitle from "@/components/SubTitle";
 import Link from "@/components/Link";
 import { contacts } from "./data";

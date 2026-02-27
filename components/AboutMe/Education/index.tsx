@@ -1,4 +1,3 @@
-import React from "react";
 import SubTitle from "@/components/SubTitle";
 import { educations } from "./data";
 

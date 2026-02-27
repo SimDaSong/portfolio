@@ -1,5 +1,4 @@
 import SubTitle from "@/components/SubTitle";
-import React from "react";
 import { skills } from "./data";
 import Ul from "@/components/Ul";
 

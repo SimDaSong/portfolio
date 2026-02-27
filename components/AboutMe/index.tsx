@@ -1,4 +1,3 @@
-import React from "react";
 import Title from "@/components/Title";
 import Contact from "./Contact";
 import Education from "./Education";
