@@ -1,7 +1,27 @@
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss";
+
+@theme {
+  --color-default: #5477AD;
+
+  --spacing-300: 300px;
+  --spacing-100: calc(100% - 300px);
+
+  --font-family-agg: 'OTWelcomeBA', sans-serif;
+
+  --font-size-xs: .75rem;
+  --font-size-sm: .875rem;
+  --font-size-tiny: .875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.35rem;
+  --font-size-3xl: 1.675rem;
+  --font-size-4xl: 2.25rem;
+  --font-size-5xl: 3rem;
+  --font-size-6xl: 4rem;
+  --font-size-7xl: 5rem;
+}
 
 * {
     font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
