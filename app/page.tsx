@@ -1,3 +1,4 @@
+import Hero from "@/components/Hero";
 import AboutMe from "@/components/AboutMe";
 import Career from "@/components/Career";
 import Award from "@/components/Award";
@@ -10,12 +11,25 @@ const classes = {
 
 export default function Home() {
   return (
-    <div className={classes.homeWrap}>
-      <AboutMe />
-      <Career />
-      <Award />
-      <Project />
-      <Others />
-    </div>
+    <>
+      <Hero />
+      <div className={classes.homeWrap}>
+        <section id="about">
+          <AboutMe />
+        </section>
+        <section id="career">
+          <Career />
+        </section>
+        <section id="awards">
+          <Award />
+        </section>
+        <section id="project">
+          <Project />
+        </section>
+        <section id="others">
+          <Others />
+        </section>
+      </div>
+    </>
   );
 }
