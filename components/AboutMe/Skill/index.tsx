@@ -1,8 +1,12 @@
 import SubTitle from "@/components/SubTitle";
-import globalClasses from "@/styles/global-classes";
 import React from "react";
 import { skills } from "./data";
 import Ul from "@/components/Ul";
+
+const classes = {
+  tableRow: "py-5 border-b border-gray-200 md:grid md:grid-cols-5 md:gap-6",
+  text: "break-words font-bold sm:mt-0",
+};
 
 const Skill = () => {
   return (
@@ -10,9 +14,9 @@ const Skill = () => {
       <SubTitle>SKILLS</SubTitle>
       <div>
         {skills.map((skill, idx) => (
-          <div key={idx} className={globalClasses.tableRow}>
+          <div key={idx} className={classes.tableRow}>
             <div>
-              <p className={globalClasses.text}>{skill.name}</p>
+              <p className={classes.text}>{skill.name}</p>
             </div>
             <div className="mt-4 md:mt-0 col-span-4">
               <Ul>
