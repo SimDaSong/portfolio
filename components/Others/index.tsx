@@ -18,23 +18,18 @@ const Others = () => {
           <div key={idx}>
             <p className={classes.title}>{other.title}</p>
             <div>
-              {other.items.map(
-                (
-                  other, // @todo: 네이밍 더 좋은 방법 없는지 생각해보기
-                  idx
-                ) => (
+              {other.items.map((item, idx) => (
                   <div key={idx} className={classes.tableRow}>
                     <div>
-                      <p className={classes.subText}>{other.date}</p>
-                      <p className="font-bold">{other.title}</p>
-                      <p className={classes.subText}>{other.role}</p>
+                      <p className={classes.subText}>{item.date}</p>
+                      <p className="font-bold">{item.title}</p>
+                      <p className={classes.subText}>{item.role}</p>
                     </div>
                     <div className={classes.otherContentWrap}>
-                      {other.content}
+                      {item.content}
                     </div>
                   </div>
-                )
-              )}
+                ))}
             </div>
           </div>
         ))}
