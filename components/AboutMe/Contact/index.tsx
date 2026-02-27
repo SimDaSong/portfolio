@@ -1,6 +1,6 @@
 import SubTitle from "@/components/SubTitle";
 import Link from "@/components/Link";
-import { contacts } from "./data";
+import { contacts } from "@/data/contacts";
 
 type Props = {
   className: string;

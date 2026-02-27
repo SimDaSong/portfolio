@@ -1,5 +1,5 @@
 import Title from "@/components/Title";
-import { careers } from "./data";
+import { careers } from "@/data/careers";
 
 const classes = {
   tableRow: "py-5 border-b border-gray-200 md:grid md:grid-cols-5 md:gap-6",

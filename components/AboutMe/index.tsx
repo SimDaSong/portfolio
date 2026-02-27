@@ -2,7 +2,7 @@ import Title from "@/components/Title";
 import Contact from "./Contact";
 import Education from "./Education";
 import Skill from "./Skill";
-import { introductions } from "./data";
+import { introductions } from "@/data/introductions";
 
 const classes = {
   profileWrap: "grid items-center gap-y-10 lg:max-w-7xl",

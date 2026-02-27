@@ -3,7 +3,7 @@ import Title from "@/components/Title";
 import SubTitle from "@/components/SubTitle";
 import Tag from "@/components/Tag";
 import Link from "@/components/Link";
-import { projects } from "./data";
+import { projects } from "@/data/projects";
 
 const classes = {
   projectContentWrap: "grid grid-cols-1 gap-y-6 mt-5",
