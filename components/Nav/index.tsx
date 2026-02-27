@@ -14,6 +14,7 @@ const sections = [
 const Nav = () => {
   const [activeId, setActiveId] = useState("");
   const [dark, setDark] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {
     const saved = localStorage.getItem("theme");
@@ -29,6 +30,16 @@ const Nav = () => {
     document.documentElement.classList.toggle("dark", next);
     localStorage.setItem("theme", next ? "dark" : "light");
   };
+
+  useEffect(() => {
+    const onScroll = () => {
+      const scrollTop = document.documentElement.scrollTop;
+      const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      setScrollProgress(scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -51,6 +62,8 @@ const Nav = () => {
   }, []);
 
   return (
+    <>
+    <div className="scroll-progress" style={{ width: `${scrollProgress}%` }} />
     <nav
       className="sticky top-0 z-50 backdrop-blur-sm border-b"
       style={{ backgroundColor: "var(--bg-nav)", borderColor: "var(--border-color)" }}
@@ -85,6 +98,7 @@ const Nav = () => {
         </div>
       </div>
     </nav>
+    </>
   );
 };
 

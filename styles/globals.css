@@ -71,6 +71,7 @@ li {
   line-height: 1.75;
 }
 
+/* Fade-in on scroll */
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -80,4 +81,56 @@ li {
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Hero gradient text */
+.gradient-text {
+  background: linear-gradient(90deg, var(--color-default), var(--color-default-light), var(--color-default));
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-shift 3s linear infinite;
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+/* Fade up animation */
+.animate-fade-up {
+  opacity: 0;
+  transform: translateY(16px);
+  animation: fade-up 0.6s ease-out forwards;
+}
+
+@keyframes fade-up {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Stagger cards */
+.stagger-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.stagger-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Scroll progress bar */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: var(--color-default);
+  z-index: 100;
+  transition: width 0.1s linear;
 }
