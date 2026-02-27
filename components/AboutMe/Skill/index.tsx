@@ -3,7 +3,7 @@ import { skills } from "@/data/skills";
 import Ul from "@/components/Ul";
 
 const classes = {
-  tableRow: "py-5 border-b border-gray-200 md:grid md:grid-cols-5 md:gap-6",
+  tableRow: "py-5 border-b md:grid md:grid-cols-5 md:gap-6 [border-color:var(--border-divider)]",
   text: "break-words font-bold sm:mt-0",
 };
 

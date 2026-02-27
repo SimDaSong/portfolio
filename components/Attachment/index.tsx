@@ -11,9 +11,9 @@ type Props = {
 
 const classes = {
   attachmentWrap: "max-w-screen-sm text-sm",
-  list: "border border-gray-200 rounded-md divide-y divide-gray-200",
+  list: "border rounded-md divide-y [border-color:var(--border-divider)] [--tw-divide-opacity:1] divide-[var(--border-divider)]",
   listItem: "pl-3 pr-4 py-3 flex items-center justify-between text-sm",
-  icon: "flex-shrink-0 h-5 w-5 text-gray-400",
+  icon: "flex-shrink-0 h-5 w-5 [color:var(--text-muted)]",
   fileNameWrap: "w-0 flex-1 flex items-center",
   fileName: "ml-2 flex-1 w-0 truncate",
   downloadWrap: "ml-4 flex-shrink-0",

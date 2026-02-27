@@ -2,9 +2,9 @@ import Title from "@/components/Title";
 import { awards } from "@/data/awards";
 
 const classes = {
-  tableRow: "py-5 border-b border-gray-200 md:grid md:grid-cols-5 md:gap-6",
+  tableRow: "py-5 border-b md:grid md:grid-cols-5 md:gap-6 [border-color:var(--border-divider)]",
   text: "break-words font-bold sm:mt-0",
-  subText: "text-sm font-large text-gray-500",
+  subText: "text-sm font-large [color:var(--text-muted)]",
 };
 
 const Award = () => {
