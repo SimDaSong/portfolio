@@ -1,5 +1,5 @@
 import Title from "@/components/Title";
-import { others } from "./data";
+import { others } from "@/data/others";
 
 const classes = {
   othersContentWrap: "grid grid-cols-1 gap-y-8 mt-5",

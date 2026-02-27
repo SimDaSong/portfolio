@@ -1,5 +1,5 @@
 import SubTitle from "@/components/SubTitle";
-import { educations } from "./data";
+import { educations } from "@/data/educations";
 
 const classes = {
   tableRow: "py-5 border-b border-gray-200 md:grid md:grid-cols-5 md:gap-6",

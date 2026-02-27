@@ -1,5 +1,5 @@
 import SubTitle from "@/components/SubTitle";
-import { skills } from "./data";
+import { skills } from "@/data/skills";
 import Ul from "@/components/Ul";
 
 const classes = {
