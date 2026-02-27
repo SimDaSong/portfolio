@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 import Title from "@/components/Title";
 import SubTitle from "@/components/SubTitle";
@@ -10,7 +13,7 @@ const classes = {
   imageWrap: "overflow-hidden rounded-md",
   image: "w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105",
   cardGroupWrap: "grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8",
-  cardWrap: "group relative flex flex-col rounded-lg overflow-hidden transition-shadow duration-300 hover:shadow-md",
+  cardWrap: "group relative flex flex-col rounded-lg overflow-hidden transition-shadow duration-300 hover:shadow-md stagger-item",
   cardContentWrap: "mt-4 flex flex-col flex-1",
   subText: "text-sm [color:var(--text-muted)]",
   text: "break-words font-bold sm:mt-0",
@@ -18,17 +21,43 @@ const classes = {
 };
 
 const Project = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container) return;
+
+    const cards = container.querySelectorAll(".stagger-item");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            const card = entry.target as HTMLElement;
+            const delay = card.dataset.index ? Number(card.dataset.index) * 100 : 0;
+            setTimeout(() => card.classList.add("visible"), delay);
+            observer.unobserve(card);
+          }
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    cards.forEach((card) => observer.observe(card));
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <div>
-      <Title>🛠 PROJECT</Title>
+    <div ref={containerRef}>
+      <Title>PROJECT</Title>
       <div className={classes.projectContentWrap}>
         {projects.map((project, idx) => (
           <div key={idx}>
             <SubTitle>{project.title}</SubTitle>
 
             <div className={`mt-6 ${classes.cardGroupWrap}`}>
-              {project.items.map((item, idx) => (
-                  <div key={idx} className={classes.cardWrap}>
+              {project.items.map((item, itemIdx) => (
+                  <div key={itemIdx} className={classes.cardWrap} data-index={itemIdx}>
                     <div className={classes.imageWrap}>
                       <Image
                         src={item.imageSrc}
@@ -50,8 +79,8 @@ const Project = () => {
                         </Link>
                       </p>
                       <div className={classes.tags}>
-                        {item.tags.map((tag, idx) => (
-                          <Tag key={idx}>{tag}</Tag>
+                        {item.tags.map((tag, tagIdx) => (
+                          <Tag key={tagIdx}>{tag}</Tag>
                         ))}
                       </div>
                     </div>
