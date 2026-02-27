@@ -1,9 +1,10 @@
 import "@/styles/globals.css";
 import Layout from "@/components/Layout";
 import type { ReactNode } from "react";
+import config from "@/data/config";
 
 export const metadata = {
-  title: "심다송의 포트폴리오",
+  title: config.title,
   viewport: "initial-scale=1.0, width=device-width",
 };
 
