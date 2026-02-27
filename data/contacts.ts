@@ -7,12 +7,8 @@ type Contact = {
 export const contacts: Contact[] = [
   {
     name: "Email",
-    link: "mailto:song58449@gmail.com",
-    text: "song58449@gmail.com",
-  },
-  {
-    name: "Facebook",
-    link: "https://fb.com/100008001034636",
+    link: "mailto:sim@dasong.dev",
+    text: "sim@dasong.dev",
   },
   {
     name: "Github",
@@ -21,9 +17,5 @@ export const contacts: Contact[] = [
   {
     name: "Velog",
     link: "https://velog.io/@software",
-  },
-  {
-    name: "RocketPunch",
-    link: "https://rocketpunch.com/@simdasong",
   },
 ];

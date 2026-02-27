@@ -1,6 +1,6 @@
 const links = [
   { label: "GitHub", href: "https://github.com/SimDaSong" },
-  { label: "Email", href: "mailto:song58449@gmail.com" },
+  { label: "Email", href: "mailto:sim@dasong.dev" },
   { label: "Velog", href: "https://velog.io/@software" },
 ];
 
