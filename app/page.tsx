@@ -5,31 +5,32 @@ import Award from "@/components/Award";
 import Project from "@/components/Project";
 import Others from "@/components/Others";
 
-const classes = {
-  homeWrap: "grid grid-cols-1 gap-y-12",
-};
+const section = "py-12";
+const divider = "border-t [border-color:var(--border-divider)]";
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <div className={classes.homeWrap}>
-        <section id="about">
-          <AboutMe />
-        </section>
-        <section id="career">
-          <Career />
-        </section>
-        <section id="awards">
-          <Award />
-        </section>
-        <section id="project">
-          <Project />
-        </section>
-        <section id="others">
-          <Others />
-        </section>
-      </div>
+      <section id="about" className={section}>
+        <AboutMe />
+      </section>
+      <hr className={divider} />
+      <section id="career" className={section}>
+        <Career />
+      </section>
+      <hr className={divider} />
+      <section id="awards" className={section}>
+        <Award />
+      </section>
+      <hr className={divider} />
+      <section id="project" className={section}>
+        <Project />
+      </section>
+      <hr className={divider} />
+      <section id="others" className={section}>
+        <Others />
+      </section>
     </>
   );
 }
