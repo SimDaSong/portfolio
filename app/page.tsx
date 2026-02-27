@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import FadeIn from "@/components/FadeIn";
 import AboutMe from "@/components/AboutMe";
 import Career from "@/components/Career";
 import Award from "@/components/Award";
@@ -12,25 +13,25 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <section id="about" className={section}>
+      <FadeIn as="section" className={section} id="about">
         <AboutMe />
-      </section>
+      </FadeIn>
       <hr className={divider} />
-      <section id="career" className={section}>
+      <FadeIn as="section" className={section} id="career">
         <Career />
-      </section>
+      </FadeIn>
       <hr className={divider} />
-      <section id="awards" className={section}>
+      <FadeIn as="section" className={section} id="awards">
         <Award />
-      </section>
+      </FadeIn>
       <hr className={divider} />
-      <section id="project" className={section}>
+      <FadeIn as="section" className={section} id="project">
         <Project />
-      </section>
+      </FadeIn>
       <hr className={divider} />
-      <section id="others" className={section}>
+      <FadeIn as="section" className={section} id="others">
         <Others />
-      </section>
+      </FadeIn>
     </>
   );
 }
