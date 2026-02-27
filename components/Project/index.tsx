@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import globalClasses from "@/styles/global-classes";
 import Title from "@/components/Title";
 import SubTitle from "@/components/SubTitle";
 import Tag from "@/components/Tag";
@@ -12,6 +11,10 @@ const classes = {
   image:
     "w-full aspect-square rounded-md overflow-hidden group-hover:opacity-75 h-60 lg:aspect-auto",
   cardContentWrap: "mt-4",
+  cardGroupWrap: "grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8",
+  cardWrap: "group relative",
+  subText: "text-sm font-large text-gray-500",
+  text: "break-words font-bold sm:mt-0",
 };
 
 const Project = () => {
@@ -23,13 +26,13 @@ const Project = () => {
           <div key={idx}>
             <SubTitle>{project.title}</SubTitle>
 
-            <div className={`mt-6 ${globalClasses.cardGroupWrap}`}>
+            <div className={`mt-6 ${classes.cardGroupWrap}`}>
               {project.items.map(
                 (
                   project,
                   idx // @todo: project 네이밍 더 좋은 방법 없는지 생각해보기
                 ) => (
-                  <div key={idx} className={globalClasses.cardWrap}>
+                  <div key={idx} className={classes.cardWrap}>
                     <Image
                       src={project.imageSrc}
                       alt={project.name}
@@ -39,8 +42,8 @@ const Project = () => {
                       style={{ width: "100%", height: "auto" }}
                     />
                     <div className={classes.cardContentWrap}>
-                      <p className={globalClasses.subText}>{project.date}</p>
-                      <p className={globalClasses.text}>
+                      <p className={classes.subText}>{project.date}</p>
+                      <p className={classes.text}>
                         {project.name}
                         <Link href={project.href}>
                           <span
