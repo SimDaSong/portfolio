@@ -1,4 +1,4 @@
-import { PaperClipIcon } from "@heroicons/react/solid";
+import { PaperClipIcon } from "@heroicons/react/24/solid";
 
 type File = {
   name: string;

@@ -10,7 +10,7 @@ import { projects } from "./data";
 const classes = {
   projectContentWrap: "grid grid-cols-1 gap-y-6 mt-5",
   image:
-    "w-full aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 h-60 lg:aspect-none",
+    "w-full aspect-square rounded-md overflow-hidden group-hover:opacity-75 h-60 lg:aspect-auto",
   cardContentWrap: "mt-4",
 };
 
@@ -33,11 +33,10 @@ const Project = () => {
                     <Image
                       src={project.imageSrc}
                       alt={project.name}
-                      className={classes.image}
-                      width="100%"
-                      height="100%"
-                      layout="responsive"
-                      objectFit="cover"
+                      className={`${classes.image} object-cover`}
+                      width={600}
+                      height={600}
+                      style={{ width: "100%", height: "auto" }}
                     />
                     <div className={classes.cardContentWrap}>
                       <p className={globalClasses.subText}>{project.date}</p>

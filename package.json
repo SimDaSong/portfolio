@@ -2,42 +2,35 @@
   "name": "portfolio",
   "private": true,
   "version": "2.0.0",
+  "type": "module",
   "homepage": "https://dasong.dev",
   "repository": "github:SimDaSong/portfolio",
   "bugs": "https://github.com/SimDaSong/portfolio/issues",
   "author": "SimDaSong <song98987@korea.ac.kr> (http://dasong.dev/)",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "vercel-deploy": "next build && next export"
+    "dev": "vinext dev",
+    "build": "vinext build",
+    "start": "vinext start",
+    "lint": "vinext lint",
+    "deploy": "vinext deploy"
   },
   "dependencies": {
-    "@heroicons/react": "^1.0.5",
-    "@mdx-js/loader": "^1.6.22",
-    "@mdx-js/react": "^1.6.22",
-    "@next/mdx": "^12.0.4",
-    "@tailwindcss/aspect-ratio": "^0.3.0",
+    "@heroicons/react": "^2",
+    "@mdx-js/react": "^3",
     "@types/react-syntax-highlighter": "^13.5.2",
-    "next": "12.0.5",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "vinext": "^0.0.13"
   },
   "devDependencies": {
-    "@types/node": "16.11.7",
-    "@types/react": "17.0.34",
-    "@typescript-eslint/eslint-plugin": "^4.33.0",
-    "@typescript-eslint/parser": "^4.33.0",
-    "autoprefixer": "^10.4.0",
-    "eslint": "7",
-    "eslint-config-airbnb-typescript": "^15.0.0",
-    "eslint-config-next": "12.0.3",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "postcss": "^8.4.31",
+    "@mdx-js/rollup": "^3",
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@vitejs/plugin-rsc": "latest",
     "prettier": "^2.4.1",
-    "tailwindcss": "^2.2.19",
-    "typescript": "4.4.4"
+    "@tailwindcss/vite": "^4",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "vite": "^7"
   }
 }
