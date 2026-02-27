@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import config from "@/data/config";
 
 const sections = [
   { id: "about", label: "About" },
@@ -56,7 +57,7 @@ const Nav = () => {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-16 flex items-center justify-between h-14">
         <a href="/" className="text-lg font-bold text-default">
-          심다송
+          {config.name}
         </a>
         <div className="flex items-center gap-6">
           <div className="hidden sm:flex gap-6">
